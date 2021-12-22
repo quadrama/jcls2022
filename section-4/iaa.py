@@ -244,7 +244,7 @@ def compareFiles(*inputFileNames):
 if __name__ == "__main__":
   """
   Usage: 
-  python3 iaa.py ../knowledge-annotation/round-2/V1/csv/guenderode-udohla_0?.csv
+  python3 iaa.py ../data/round-2/V1/csv/guenderode-udohla_0?.csv
   
   Usage:
   for i in $( ls ../data/round-2/V1/csv/*01.csv); do python3 iaa.py $i ${i/01/02}; done
