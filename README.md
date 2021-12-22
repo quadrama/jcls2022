@@ -1,5 +1,7 @@
 # Who Knows What in German Dramas? A Composite Annotation Scheme for Knowledge Transfer
 
+This repository contains code and data to reproduce results reported in a publication submitted in the [Journal of Computational Literary Studies](https://jcls.io).
+
 Contents of this repository:
 
 ## `data`
