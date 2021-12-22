@@ -98,7 +98,9 @@ plot_centrality_curve <- function(corpus, N = 5, cumulative = TRUE,
            ggsave(filename = paste0("plots/", "centrality-curve_", plot_name, "_", 
                                     centrality_fun$name, cumulative_str, ".png"), 
                   plot = gg,
-                  dpi = 300)
+                  dpi = 300,
+                  height = 6, 
+                  width = 10)
            gg
          }
   )
