@@ -22,4 +22,8 @@ done
 
 This will iterate over all files in `data/round-2/V1`, and call the python script for each file. The python scripts gets the versions by two annotators as arguments.
 
+
+### Performance
+The script makes use of the [pygamma-agreement](https://github.com/bootphon/pygamma-agreement) library, which in turn relies on a highly optimized library for integer linear programming. Please follow their installation instructions to use the CBC solver.
+
 ## `section-5`: Analysing Annotated Knowledge Transfers
