@@ -22,10 +22,20 @@ do
 done
 ```
 
-This will iterate over all files in `data/round-2/V1`, and call the python script for each file. The python scripts gets the versions by two annotators as arguments.
+This will iterate over all files in `data/round-2/V1`, and call the python script for each file. The python script gets the versions by two annotators as arguments.
 
 
 ### Performance
 The script makes use of the [pygamma-agreement](https://github.com/bootphon/pygamma-agreement) library, which in turn relies on a highly optimized library for integer linear programming. Please follow their installation instructions to use the CBC solver.
 
 ## `section-5`: Analysing Annotated Knowledge Transfers
+
+The python (v. 3.10.1) script can be run using the command
+```sh
+$ python3 annotations_per_x_tokens.py ../data -x 1000
+```
+
+To install the needed packages for the R scripts, issue the following command in a R console:
+```R
+> install.packages(c("DramaAnalysis", "tidyverse", "knitr", "kableExtra"))
+```
