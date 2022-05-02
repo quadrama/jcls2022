@@ -40,9 +40,10 @@ plot_networks <- function(corpus, mode = "all", removeAudience = TRUE, save = FA
     g <- graph_from_data_frame(edges, directed = TRUE, vertices = vertices)
     plot_name <- tools::file_path_sans_ext(basename(names(corpus)[[i]]))
     if (save) {
-      png(filename = paste0("plots/", "network_", plot_name, "_", mode, ".png"), 
-          width = 8, height = 8, units = 'in', res = 300)
+      pdf(file = paste0("plots/", "network_", plot_name, "_", mode, ".pdf"), 
+          width = 8, height = 8)
     }
+    par(mar=c(0,0,0,0)+.1)
     plot(g,
          edge.label = E(g)$weight,
          edge.width = 1,

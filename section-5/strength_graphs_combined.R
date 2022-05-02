@@ -86,15 +86,15 @@ plot_centrality_curve <- function(corpus, N = 5, cumulative = TRUE,
              geom_line() +
              facet_wrap(. ~ character, ncol = 4) +
              #ggtitle(plot_name) +
-             xlab("Position") +
+             xlab("Bin") +
              ylab(stringr::str_to_title(centrality_fun$name)) +
              guides(colour=guide_legend(title="Legend")) +
              theme_bw() +
              theme(legend.position="top")
            print(paste0("plots/", "centrality-curve_", plot_name, "_", 
-                        centrality_fun$name, cumulative_str, ".png"))
+                        centrality_fun$name, cumulative_str, ".pdf"))
            ggsave(filename = paste0("plots/", "centrality-curve_", plot_name, "_", 
-                                    centrality_fun$name, cumulative_str, ".png"), 
+                                    centrality_fun$name, cumulative_str, ".pdf"), 
                   plot = gg,
                   dpi = 300)
            gg
